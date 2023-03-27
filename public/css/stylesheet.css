@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    /* box-sizing: content-box; */
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: url('/img/back-image.jpeg') no-repeat;
+    background-size: contain;
+}
+
+canvas {
+    width: 100%;
+    cursor: url('/img/cursor.png'), crosshair;
+    background-size: cover;
+    position: relative;
+    z-index: 994;
+}
+
+blockquote {
+    top: 420px;
+    /* bottom: -420px; */
+    margin: 0 5%;
+    font: 1.1rem 'Patrick Hand SC', 'Verdana', sans-serif;
+    font-style: italic;
+    color: rgba(33, 33, 33, 1);
+    position: relative;
+    z-index: 993;
+    height: 0px;
+
+}
+
+#box-eye {
+    position: absolute;
+    z-index: 999;
+    right: .5rem;
+    margin-top: 1%;
+}
+
+img.eye-pict {
+    height: 4rem;
+    cursor: pointer;
+}
+
+#box-info {
+    position: absolute;
+    z-index: 998;
+    right: 0;
+    margin: 0;
+}
+
+img.info-pict {
+    height: 4rem;
+}
+
+@media only screen and (max-width: 30em) {
+    canvas {
+        cursor: pointer;
+    }
+
+    blockquote {
+        font-size: .6rem;
+        margin: 0;
+        top: 20px;
+    }
+
+    img.eye-pict {
+        height: 1.5rem;
+    }
+
+    img.info-pict {
+        height: 3rem;
+    }
+}
+@media only screen and (min-width: 30em) and (max-width: 53em) {
+    blockquote {
+        font-size: .9rem;
+        /* margin: 0; */
+        top: 100px;
+    }
+}
+
+@media only screen and (max-width: 53em) {
+    #box-eye {
+        right: auto;
+        margin: 0 45%;
+    }
+
+    #box-info {
+        right: auto;
+        width: 40%;
+        margin: 2% 30%;
+    }
+}

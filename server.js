@@ -1,6 +1,9 @@
-const express = require('express');
-const fetch = require("node-fetch");
-require('dotenv').config();
+// const express = require('express');
+import express from 'express';
+// const fetch = require("node-fetch");
+import fetch from 'node-fetch';
+import "dotenv/config.js";
+// require('dotenv').config();
 
 const app = express();
 app.use(express.static('public'));

@@ -1,6 +1,5 @@
 let canvas = document.querySelector(".myCanvas");
 
-
 // ------Random auto-drawing of trails---------------
 
 // get a 2d context of the canvas for auto drawing
@@ -74,10 +73,8 @@ const animateTrail = () => {
 	for (let i = 0; i < trailArray.length; i++) {
 		trailArray[i].updateTrail();  
 	}
-	// console.log("im drawing");
 }
 animateTrail();
-console.log("trails: ", trailArray);
 
 // ------User-Drawing front trails---------------
 
@@ -176,7 +173,6 @@ function animateRubber () {
 	}
 };
 animateRubber();
-
 
 // ---------- Uncover back-image by clickking 'See it better' btn
 let info = document.querySelector('#box-info');

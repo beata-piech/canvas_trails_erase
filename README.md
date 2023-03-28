@@ -7,3 +7,5 @@ The "See it better" button (top right corner/or top center) can be used to clear
 The OpenAI's text-generating language model called "davinci-003" is prompted to provide a sentence about AI, people and the future. The leveraged parameters have been set to generate a response with a maximum of 100 tokens, penalize the likelihood of repeating the same words or phrases and prioritize generating more diverse and creative responses.
 
 DEMO: http://canvas-trails-erase.onrender.com/
+![image](https://user-images.githubusercontent.com/123559936/228387554-af15248c-76d4-4b60-97b7-f11518f27bb5.png)
+

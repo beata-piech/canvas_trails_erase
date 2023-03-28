@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    /* box-sizing: content-box; */
 }
 
 html,
@@ -27,10 +26,10 @@ canvas {
 }
 
 blockquote {
-    top: 420px;
-    /* bottom: -420px; */
+    top: -200px;
     margin: 0 5%;
-    font: 1.1rem 'Patrick Hand SC', 'Verdana', sans-serif;
+    font-size: 1.1rem;
+    font-family: 'Patrick Hand SC', 'Verdana', sans-serif;
     font-style: italic;
     color: rgba(33, 33, 33, 1);
     position: relative;
@@ -62,42 +61,41 @@ img.info-pict {
     height: 4rem;
 }
 
-@media only screen and (max-width: 30em) {
-    canvas {
-        cursor: pointer;
-    }
-
-    blockquote {
-        font-size: .6rem;
-        margin: 0;
-        top: 20px;
-    }
-
-    img.eye-pict {
-        height: 1.5rem;
-    }
-
-    img.info-pict {
-        height: 3rem;
-    }
-}
-@media only screen and (min-width: 30em) and (max-width: 53em) {
+@media only screen and (max-width: 75em) {
     blockquote {
         font-size: .9rem;
-        /* margin: 0; */
-        top: 100px;
     }
 }
 
 @media only screen and (max-width: 53em) {
+    blockquote {
+        top: -160px;
+    }
     #box-eye {
         right: auto;
         margin: 0 45%;
     }
-
     #box-info {
         right: auto;
         width: 40%;
         margin: 2% 30%;
     }
 }
+
+@media only screen and (max-width: 30em) {
+    canvas {
+        cursor: pointer;
+    }
+    blockquote {
+        font-size: .6rem;
+        margin: 0;
+        top: -60px;
+    }
+    img.eye-pict {
+        height: 1.5rem;
+    }
+    img.info-pict {
+        height: 3rem;
+    }
+}
+

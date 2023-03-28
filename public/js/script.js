@@ -1,7 +1,4 @@
-let boxContainer = document.querySelector(".box");
-let canvas = document.createElement("canvas");
-canvas.classList.add("myCanvas");
-boxContainer.append(canvas);
+let canvas = document.querySelector(".myCanvas");
 
 
 // ------Random auto-drawing of trails---------------
@@ -40,7 +37,7 @@ class Trail {
 			drawRandomCtx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI, false);
 			drawRandomCtx.fill();
 		};
-		//to update the object's movement when touches any edge of the canvas
+		//update the object's movement when touches any edge of the canvas
 		this.updateTrail = function() {
 			if(this.x + this.dx > canvas.width - this.radius || this.x + this.dx < this.radius) {
 			//if the object touches the the right or the left edge of the Canvas 

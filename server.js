@@ -18,7 +18,8 @@ app.post('/api', async (request, response) => {
 
     //set up parameters to fetch resources from OpenAI
     const api_url = "https://api.openai.com/v1/completions";
-    const prompt = "Create a computing sentence about AI, humans and the future";
+    const prompt = "Create a sentence about AI, humans and the future";
+    // const prompt = "How many chickens would it take to kill an elephant, if there was Godzilla Chicken?";
     const headers = {
         "Content-Type": "application/json",
         "Authorization": `Bearer ${process.env.API_KEY}`
@@ -27,7 +28,7 @@ app.post('/api', async (request, response) => {
         "prompt": prompt,
         "model": "text-davinci-003",
         "max_tokens": 100, 
-        "temperature": 0.8, 
+        "temperature": 0.9, 
         // create more diverse and imaginative response, avoid repeating the same words 
         "frequency_penalty": 1
     };
